@@ -13,20 +13,20 @@ function getCompueterChoice(){
   const choices =["rock", "paper", "scissors"];
   const randomNumber = (Math.floor(Math.random() * 3));
   return choices[randomNumber];
-} 
+}; 
 
 function convertToWeapon(weapon) {
   if (weapon === 'rock') return "Rock";
   if (weapon === 'paper') return "Paper";
   return "Scissors";
-}
+};
 
 function win(user, computer){
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWeapon(user)} beats ${convertToWeapon(computer)}. You Win!`;
-}
+};
 
 function lose(user, computer){
   computerScore++;
